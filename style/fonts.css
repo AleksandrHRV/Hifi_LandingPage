@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'Conv_Gordita-Regular';
+	src: url('../fonts/Gordita-Regular.eot');
+	src: local('☺'), url('../fonts/Gordita-Regular.woff') format('woff'), url('../fonts/Gordita-Regular.ttf') format('truetype'), url('../fonts/Gordita-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Gordita-Medium';
+	src: url('../fonts/Gordita-Medium.eot');
+	src: local('☺'), url('../fonts/Gordita-Medium.woff') format('woff'), url('../fonts/Gordita-Medium.ttf') format('truetype'), url('../fonts/Gordita-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Gordita-Bold';
+	src: url('../fonts/Gordita-Bold.eot');
+	src: local('☺'), url('../fonts/Gordita-Bold.woff') format('woff'), url('../fonts/Gordita-Bold.ttf') format('truetype'), url('../fonts/Gordita-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
