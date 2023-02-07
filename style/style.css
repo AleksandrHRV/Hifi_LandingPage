@@ -1,3 +1,4 @@
+
 ._container {
   max-width: 1290px;
   padding: 0 15px;
@@ -24,16 +25,15 @@
   gap: 25px;
 }
 .menu__header-item {
+  transition: scale ease 200ms;
+}
+.menu__header-item:hover {
+  scale: 1.2;
 }
 .menu__header-link {
   font-family: "Conv_Gordita-Medium";
-  font-size: 1.44;
   line-height: 23px;
   color: #303948;
-  transition: 300ms;
-}
-.menu__header-link:hover{
-  font-weight: 700;
 }
 
 /* ===============HERO============================ */
@@ -82,11 +82,10 @@
   font-size: 22px;
   line-height: 1.41;
   color: #303948;
-  transition: 300ms;
+  transition: 200ms;
 }
-.hero__button:hover{
-  color: #1c1c1c;
-  background: #b3b3b3;
+.hero__button:hover {
+  scale: 1.2;
 }
 /* ============About==================== */
 .main__about {
@@ -132,8 +131,11 @@
   display: inline-block;
 }
 .about__icon {
+  transition: all ease 200ms;
 }
-
+.about__icon:hover {
+  scale: 1.3;
+}
 /* =============clients========================== */
 
 .main__client {
@@ -168,7 +170,7 @@
 .client__list {
   display: flex;
   height: 65px;
-  gap: 27px;
+  gap: 35px;
 }
 .client__item {
   display: flex;
@@ -181,6 +183,10 @@
 
 .client__link {
   display: block;
+  transition: all ease 200ms;
+}
+.client__link:hover {
+  scale: 1.3;
 }
 
 /* ===========services================= */
@@ -208,7 +214,7 @@
   position: absolute;
   top: -46px;
   left: -33px;
-  background-image: url(../img/services/services-photo.png);
+  background-image: url(../img/services/team.jpg);
   width: 522px;
   height: 743px;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
@@ -340,10 +346,11 @@
   font-size: 22px;
   line-height: 1.41;
   color: #fafafa;
-  transition: 300ms;
+  transition: 200ms;
 }
-.body-process_desc-btn:hover{
-  box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.49);
+.body-process_desc-btn:hover {
+  scale: 1.2;
+  box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.3);
 }
 .body-process_images {
 }
@@ -489,10 +496,13 @@
   font-size: 22px;
   line-height: 1.41;
   color: #fafafa;
+  transition: all ease 200ms;
+  margin-bottom: 10px;
 }
 
-.item-content_btn:hover{
-  box-shadow: 0px -25px 40px -26px rgba(0,0,0,0.43);
+.item-content_btn:hover {
+  scale: 1.2;
+  box-shadow: 0px -25px 40px -26px rgba(0, 0, 0, 0.43);
 }
 .slick-slider {
 }
@@ -533,6 +543,7 @@
   height: 80px;
   border-radius: 50%;
   font-size: 0;
+  transition: all ease 200ms;
 }
 
 /* Стрелка влево */
@@ -543,9 +554,14 @@
 .page-portfolio_buttons .slick-arrow.slick-next {
   background: url(../img/portfolio/Arrow-r.svg) center no-repeat, #14213d;
 }
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:hover {
+  scale: 1.2;
+}
 /* Стрелка не активная */
 .page-portfolio_buttons .slick-arrow.slick-disabled {
   opacity: 0.5;
+  scale: 1;
 }
 /* Точки (булиты) */
 .slider .slick-dots {
@@ -674,14 +690,22 @@
 /* Стрелка влево */
 .content__reviews-btns .slick-arrow.slick-prev {
   background: url(../img/portfolio/Arrow-l.svg) center no-repeat, #14213d;
+  transition: all ease 200ms;
 }
 /* Стрелка вправо */
 .content__reviews-btns .slick-arrow.slick-next {
   background: url(../img/portfolio/Arrow-r.svg) center no-repeat, #14213d;
+  transition: all ease 200ms;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  scale: 1.2;
 }
 /* Стрелка не активная */
 .content__reviews-btns .slick-arrow.slick-disabled {
   opacity: 0.5;
+  scale: 1;
 }
 /* Точки (булиты) */
 .slick-dots {
@@ -711,7 +735,7 @@
   min-height: 491px;
   justify-content: space-between;
 }
-.footer__content-wrap{
+.footer__content-wrap {
   display: flex;
   justify-content: space-between;
 }
@@ -744,6 +768,12 @@
   display: flex;
   align-items: center;
   color: #14213d;
+  transition: left 300ms ease;
+}
+.adress__link:hover,
+.adress__link:focus {
+  position: relative;
+  left: 10%;
 }
 .adress__link-map {
 }
@@ -767,10 +797,16 @@
 }
 .menu-footer {
 }
-.menu-footer_list {
-}
+
 .menu-footer_item {
+  transition: all ease 200ms;
 }
+.menu-footer_link:hover,
+.menu-footer_link:focus {
+  position: relative;
+  right: 10%;
+}
+
 .menu-footer_item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -780,17 +816,15 @@
   line-height: 1.4;
   color: #14213d;
 }
-.footer__text{
-  padding: 140PX 0 0 22PX;
-  font-family: 'Conv_Gordita-Regular';
-font-size: 18px;
-line-height: 1.45;
-color: #14213D;
+.footer__text {
+  padding: 140px 0 0 22px;
+  font-family: "Conv_Gordita-Regular";
+  font-size: 18px;
+  line-height: 1.45;
+  color: #14213d;
 }
-.footer__icon{
+.footer__icon {
   position: absolute;
   bottom: 89px;
   left: -40px;
-
 }
-

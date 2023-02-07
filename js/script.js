@@ -1,6 +1,6 @@
 $(document).ready(function(){
  $('.slider-porfolio').slick({
-    arrow:true,
+    arrows:true,
     dots:false,
     adaptiveHeight:true,
     slidesToShow:3,
@@ -12,6 +12,7 @@ $(document).ready(function(){
     appendArrows:$('.page-portfolio_buttons'),
  });
 }); 
+
 $(document).ready(function(){
     $('.reviews__slider').slick({
         arrow:true,
